@@ -1,0 +1,28 @@
+<mj-section width="100%">
+  <mj-column>
+    <mj-text color="#BFD4C6">
+      Tranzt at the touch of a button! Download our app</mj-text
+    >
+  </mj-column>
+</mj-section>
+
+<mj-section width="100%" padding-top="0" text-align="left">
+  <mj-column width="140px" css-class="mobile-apps">
+    <mj-image
+      align="left"
+      width="130px"
+      href="https://play.google.com/store/apps/details?id=co.tranzt.userapp&pcampaignid=web_share"
+      src="https://res.cloudinary.com/busha-inc/image/upload/v1667487553/accounts/Email%20assets/google-play.png"
+      alt="Play store"
+    />
+  </mj-column>
+  <mj-column width="140px">
+    <mj-image
+      align="left"
+      width="130px"
+      href="https://play.google.com/store/apps/details?id=co.tranzt.userapp&pcampaignid=web_share"
+      src="https://res.cloudinary.com/busha-inc/image/upload/v1667487559/accounts/Email%20assets/app-store.png"
+      alt="App Store"
+    />
+  </mj-column>
+</mj-section>

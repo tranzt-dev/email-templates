@@ -1,0 +1,11 @@
+<mj-include path="./mobile-store.mjml" />
+
+<mj-section padding-top="0px">
+  <mj-text color="#BFD4C6">
+    Questions or faq? Contact us at
+    <span style="color: #fff; text-decoration: underline">faq@tranzt.com</span>.
+    If you'd rather not receive this kind of email, Don’t want any more emails
+    from Tranzt?
+    <span style="color: #fff; text-decoration: underline">Unsubscribe</span>.
+  </mj-text>
+</mj-section>

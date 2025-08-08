@@ -1,0 +1,11 @@
+<mj-section>
+  <mj-column>
+    <mj-image
+      align="center"
+      width="87px"
+      height="24px"
+      src="https://res.cloudinary.com/dqjclnoyu/image/upload/v1754596830/tranzt/email/tranzt-logo.png"
+      alt="Tranzt Logo"
+    />
+  </mj-column>
+</mj-section>
