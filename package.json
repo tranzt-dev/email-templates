@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mjml": "^4.15.3",
+    "mjml-bullet-list": "^1.2.2"
+  },
+  "scripts": {
+    "prettify": "mjml input.mjml --config.beautify",
+    "build": "mjml input.mjml -o output.html"
+  }
+}
