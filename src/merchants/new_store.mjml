@@ -11,26 +11,17 @@
 
       <mj-column width="100%">
         <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px">
-          Order Confirmed 🎉 <br />
-          Your Order #1234 is on the way
+You're officially live on Tranzt! 🍽️
         </mj-text>
 
         <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
 
-        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> Thank you for your order! We’re preparing your items and will notify you once they’re ready. </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> Great news! Your restaurant, [Restaurant Name], has been approved and is now live on Tranzt. <br>Customers can now view your menu, place orders, and enjoy the meals you offer. </mj-text>
 
-        <mj-text font-size="14px" color="#384860"> Order Details. </mj-text>
-
-        <mj-list padding-left="12px">
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Order Number: #1234 </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Items Ordered: [Item 1, Item 2, Item 3] </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Total: ₦[Total Amount] </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Estimated Delivery: [ETA] </mj-li>
-        </mj-list>
       </mj-column>
 
       <mj-column width="100%" padding-top="24px">
-        <mj-button align="left" width="227px"> Track Order </mj-button>
+        <mj-button align="left" width="227px"> Log in</mj-button>
 
         <mj-text padding-top="24px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> If you have any questions, feel free to [contact support]. </mj-text>
 
