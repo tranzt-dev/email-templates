@@ -10,28 +10,46 @@
       </mj-column>
 
       <mj-column width="100%">
-        <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px"> Your Payout of ₦xxxx Has Been Processed </mj-text>
+        <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px"> 
+          Your Payout of ₦{{payout_amount}} Has Been Processed 
+        </mj-text>
 
         <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
 
-        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> Your payout for the latest sales period has been processed successfully </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> 
+          Your payout for the latest sales period has been processed successfully 
+        </mj-text>
 
         <mj-text font-size="14px" color="#384860"> Payout Details. </mj-text>
 
         <mj-list padding-left="12px">
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Amount: ₦xxxx</mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Date: Date of transaction </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Total: ₦[Total Amount] </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Payment method: Bank transfer </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Amount: ₦{{payout_amount}}
+          </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Date: {{payout_date}}
+          </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Total: ₦{{total_amount}}
+          </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Payment method: {{payment_method}}
+          </mj-li>
         </mj-list>
       </mj-column>
 
       <mj-column width="100%" padding-top="24px">
-        <mj-button align="left" width="227px"> View Transaction History </mj-button>
+        <mj-button align="left" width="227px" href="{{transaction_history_url}}"> 
+          View Transaction History 
+        </mj-button>
 
-        <mj-text padding-top="24px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> If you have any questions, feel free to [contact support]. </mj-text>
+        <mj-text padding-top="24px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+          If you have any questions, feel free to <a href="{{support_url}}" style="color: #384860;">contact support</a>. 
+        </mj-text>
 
-        <mj-text padding-top="16px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> Tranzt Team </mj-text>
+        <mj-text padding-top="16px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+          Tranzt Team 
+        </mj-text>
       </mj-column>
     </mj-section>
 

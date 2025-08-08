@@ -10,28 +10,46 @@
       </mj-column>
 
       <mj-column width="100%">
-        <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px"> New Order Received! <br />Order #1234 Needs Attention </mj-text>
+        <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px"> 
+          New Order Received! <br />Order #{{order_number}} Needs Attention 
+        </mj-text>
 
         <mj-text padding-bottom="8px"> Hi {{storeName}}, </mj-text>
 
-        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> You have received a new order! Please start preparing it for pick up </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> 
+          You have received a new order! Please start preparing it for pick up 
+        </mj-text>
 
         <mj-text font-size="14px" color="#384860"> Order Details. </mj-text>
 
         <mj-list padding-left="12px">
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Order number: ₦xxxx</mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Item Ordered: Date of transaction </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Total: ₦[Total Amount] </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Pick up Time: 12:00 Pm </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Order number: #{{order_number}}
+          </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Item Ordered: {{items_ordered}}
+          </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Total: ₦{{total_amount}}
+          </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Pick up Time: {{pickup_time}}
+          </mj-li>
         </mj-list>
       </mj-column>
 
       <mj-column width="100%" padding-top="24px">
-        <mj-button align="left" width="227px"> View Order </mj-button>
+        <mj-button align="left" width="227px" href="{{order_view_url}}"> 
+          View Order 
+        </mj-button>
 
-        <mj-text padding-top="24px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> If you have any questions, feel free to [contact support]. </mj-text>
+        <mj-text padding-top="24px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+          If you have any questions, feel free to <a href="{{support_url}}" style="color: #384860;">contact support</a>. 
+        </mj-text>
 
-        <mj-text padding-top="16px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> Tranzt Team </mj-text>
+        <mj-text padding-top="16px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+          Tranzt Team 
+        </mj-text>
       </mj-column>
     </mj-section>
 

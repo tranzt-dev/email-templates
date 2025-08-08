@@ -16,7 +16,7 @@ You're officially live on Tranzt! 🍽️
 
         <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
 
-        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> Great news! Your restaurant, [Restaurant Name], has been approved and is now live on Tranzt. <br>Customers can now view your menu, place orders, and enjoy the meals you offer. </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> Great news! Your restaurant, {{Restaurant Name}}, has been approved and is now live on Tranzt. <br>Customers can now view your menu, place orders, and enjoy the meals you offer. </mj-text>
 
       </mj-column>
 

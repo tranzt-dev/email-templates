@@ -10,30 +10,50 @@
       </mj-column>
 
       <mj-column width="100%">
-        <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px"> Welcome to the <br>[Restaurant Name] team!</mj-text>
+        <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px"> 
+          Welcome to the <br />{{restaurant_name}} team!
+        </mj-text>
 
         <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
 
-        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> You’ve been added as a staff member to our system. Below are your login details to access the staff portal: </mj-text>
-
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> 
+          You've been added as a staff member to our system. Below are your login details to access the staff portal: 
+        </mj-text>
 
         <mj-list padding-left="12px">
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Email: Ayoposi@gmail.com</mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Temporary Password: Tranzt@1 </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Total: ₦[Total Amount] </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> Payment method: Bank transfer </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Email: {{staff_email}}
+          </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Temporary Password: {{temp_password}}
+          </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Role: {{staff_role}}
+          </mj-li>
+          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+            Start Date: {{start_date}}
+          </mj-li>
         </mj-list>
       </mj-column>
-          <mj-column width="100%" padding-top="14px">
-      <mj-text font-size="14px" color="#384860" padding-bottom="8px" padding-top="8px">       Please log in using the link below and change your password immediately for security: </mj-text>
-  </mj-column>
+      
+      <mj-column width="100%" padding-top="14px">
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px" padding-top="8px">       
+          Please log in using the link below and change your password immediately for security: 
+        </mj-text>
+      </mj-column>
 
       <mj-column width="100%" padding-top="24px">
-        <mj-button align="left" width="227px"> Join the team </mj-button>
+        <mj-button align="left" width="227px" href="{{staff_portal_url}}"> 
+          Join the team 
+        </mj-button>
 
-        <mj-text padding-top="24px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> If you have any questions, feel free to [contact support]. </mj-text>
+        <mj-text padding-top="24px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+          If you have any questions, feel free to <a href="{{support_url}}" style="color: #384860;">contact support</a>. 
+        </mj-text>
 
-        <mj-text padding-top="16px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> Tranzt Team </mj-text>
+        <mj-text padding-top="16px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+          Tranzt Team 
+        </mj-text>
       </mj-column>
     </mj-section>
 
