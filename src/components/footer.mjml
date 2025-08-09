@@ -3,9 +3,14 @@
 <mj-section padding-top="0px">
   <mj-text color="#BFD4C6">
     Questions or faq? Contact us at
-    <span style="color: #fff; text-decoration: underline">faq@tranzt.com</span>.
-    If you'd rather not receive this kind of email, Don’t want any more emails
-    from Tranzt?
-    <span style="color: #fff; text-decoration: underline">Unsubscribe</span>.
+    <a
+      href="mailto:contact@usetranzt.co"
+      style="color: #fff; text-decoration: underline"
+      >contact@tranzt.com</a
+    >. If you'd rather not receive this kind of email, Don’t want any more
+    emails from Tranzt?
+    <a href="{{unsubscribeUrl}}" style="color: #fff; text-decoration: underline"
+      >Unsubscribe</a
+    >
   </mj-text>
 </mj-section>
