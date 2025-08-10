@@ -1,0 +1,33 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body css-class="main">
+    <mj-include path="../components/logo.mjml" />
+
+    <mj-section mj-class="body-section" background-color="#FFF" border-radius="12px">
+      <mj-column width="100%" padding-bottom="20px">
+        <mj-image align="center" src="https://res.cloudinary.com/dqjclnoyu/image/upload/v1754624244/tranzt/email/order-confirmation-header-image.png" alt="order-confirmation-header-image" />
+      </mj-column>
+
+      <mj-column width="100%">
+        <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px"> Verify Your Email Address </mj-text>
+
+        <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> Thank you for signing up with Tranzt! </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> To complete your registration, please verify your email address by entering the code below: </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px" font-weight="700"> Verification Code: {{verification_code}} </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">This code will expire in {{expiration_time}} minutes If you did not request this, please ignore this email. </mj-text>
+      </mj-column>
+
+      <mj-column width="100%" padding-top="24px">
+
+
+        <mj-text padding-top="16px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> Tranzt Team </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>

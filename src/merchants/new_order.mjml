@@ -1,0 +1,59 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body css-class="main">
+    <mj-include path="../components/logo.mjml" />
+
+    <mj-section mj-class="body-section" background-color="#FFF" border-radius="12px">
+      <mj-column width="100%" padding-bottom="20px">
+        <mj-image 
+          width="600px" 
+          align="center" 
+          src="https://res.cloudinary.com/dqjclnoyu/image/upload/v1754624244/tranzt/email/order-confirmation-header-image.png" 
+          alt="order-confirmation-header-image" 
+        />
+      </mj-column>
+
+      <mj-column width="100%">
+        <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px"> 
+          New Order Received! <br />Order #{{order_number}} Needs Attention 
+        </mj-text>
+
+        <mj-text padding-bottom="8px">Hi {{storeName}},</mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> 
+          You have received a new order! Please start preparing it for pick up.
+        </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> 
+          Order Details:
+        </mj-text>
+
+        <mj-text padding-left="12px" font-size="14px" color="#384860" line-height="150%">
+          <ul style="padding-left: 16px; margin: 0;">
+            <li>Order number: #{{order_number}}</li>
+            <li>Item Ordered: {{items_ordered}}</li>
+            <li>Total: ₦{{total_amount}}</li>
+            <li>Pick up Time: {{pickup_time}}</li>
+          </ul>
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="100%" padding-top="24px">
+        <mj-button align="left" width="227px" href="{{order_view_url}}"> 
+          View Order 
+        </mj-button>
+
+        <mj-text padding-top="24px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+          If you have any questions, feel free to <a href="{{support_url}}" style="color: #384860;">contact support</a>. 
+        </mj-text>
+
+        <mj-text padding-top="16px" color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
+          Tranzt Team 
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>

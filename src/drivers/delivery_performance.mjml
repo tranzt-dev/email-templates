@@ -1,0 +1,65 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body css-class="rider-body">
+    <mj-include path="../components/logo.mjml" />
+
+    <mj-section mj-class="body-section" background-color="#FFF" border-radius="12px">
+      <mj-column width="100%" padding-bottom="20px">
+        <mj-image 
+          align="center"  
+          src="https://res.cloudinary.com/dqjclnoyu/image/upload/v1754660514/uploads/ko0kj6movkkrlyjznyfv.png" 
+          alt="order-confirmation-header-image" 
+        />
+      </mj-column>
+ 
+      <mj-column width="100%">
+        <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px">
+          Your Delivery Performance Report is Ready
+        </mj-text>
+
+        <mj-text padding-bottom="8px">Hi {{firstName}},</mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          Here’s your latest performance summary:
+        </mj-text>
+
+        <mj-text padding-left="12px" font-size="14px" color="#384860" line-height="150%" padding-bottom="8px">
+          <ul style="padding-left: 16px; margin: 0;">
+            <li>Total Deliveries: {{total_deliveries}}</li>
+            <li>Average Rating: ⭐ {{average_rating}}</li>
+            <li>Earnings This Week: ₦{{amount}}</li>
+          </ul>
+        </mj-text>
+        
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          Top Feedback from Customers:
+        </mj-text>
+
+        <mj-text padding-left="12px" font-size="14px" color="#384860" line-height="150%">
+          <ul style="padding-left: 16px; margin: 0;">
+            <li>{{feedback_1}}</li>
+            <li>{{feedback_2}}</li>
+            <li>{{feedback_3}}</li>
+          </ul>
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="100%" padding-top="24px">
+        <mj-button align="left" width="227px">
+          View full report
+        </mj-button>
+
+        <mj-text padding-top="24px" color="#384860" line-height="150%" font-size="14px" font-weight="400">
+          Keep up the great work! 🚀
+        </mj-text>
+
+        <mj-text padding-top="16px" color="#384860" line-height="150%" font-size="14px" font-weight="400">
+          Tranzt Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>
