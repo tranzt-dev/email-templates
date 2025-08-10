@@ -6,7 +6,11 @@
 
     <mj-section mj-class="body-section" background-color="#FFF" border-radius="12px">
       <mj-column width="100%" padding-bottom="20px">
-        <mj-image align="center" src="https://res.cloudinary.com/dqjclnoyu/image/upload/v1754624244/tranzt/email/order-confirmation-header-image.png" alt="order-confirmation-header-image" />
+        <mj-image 
+          align="center" 
+          src="https://res.cloudinary.com/dqjclnoyu/image/upload/v1754624244/tranzt/email/order-confirmation-header-image.png" 
+          alt="order-confirmation-header-image" 
+        />
       </mj-column>
 
       <mj-column width="100%">
@@ -14,28 +18,24 @@
           Your Payout of ₦{{payout_amount}} Has Been Processed 
         </mj-text>
 
-        <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
+        <mj-text padding-bottom="8px">Hi {{firstName}},</mj-text>
 
         <mj-text font-size="14px" color="#384860" padding-bottom="8px"> 
-          Your payout for the latest sales period has been processed successfully 
+          Your payout for the latest sales period has been processed successfully. 
         </mj-text>
 
-        <mj-text font-size="14px" color="#384860"> Payout Details. </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px"> 
+          Payout Details:
+        </mj-text>
 
-        <mj-list padding-left="12px">
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
-            Amount: ₦{{payout_amount}}
-          </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
-            Date: {{payout_date}}
-          </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
-            Total: ₦{{total_amount}}
-          </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
-            Payment method: {{payment_method}}
-          </mj-li>
-        </mj-list>
+        <mj-text padding-left="12px" font-size="14px" color="#384860" line-height="150%">
+          <ul style="padding-left: 16px; margin: 0;">
+            <li>Amount: ₦{{payout_amount}}</li>
+            <li>Date: {{payout_date}}</li>
+            <li>Total: ₦{{total_amount}}</li>
+            <li>Payment method: {{payment_method}}</li>
+          </ul>
+        </mj-text>
       </mj-column>
 
       <mj-column width="100%" padding-top="24px">

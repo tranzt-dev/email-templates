@@ -5,6 +5,6 @@
   },
   "scripts": {
     "prettify": "mjml input.mjml --config.beautify",
-    "build": "mjml input.mjml -o output.html"
+    "build": "node init && mjml input.mjml -o output.html"
   }
 }
