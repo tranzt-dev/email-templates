@@ -8,7 +8,7 @@
       <mj-column width="100%" padding-bottom="20px">
         <mj-image align="center" src="https://res.cloudinary.com/dqjclnoyu/image/upload/v1754624244/tranzt/email/order-confirmation-header-image.png" alt="order-confirmation-header-image" />
       </mj-column>
-
+ 
       <mj-column width="100%">
         <mj-text font-family="Inter" font-size="20px" line-height="140%" font-weight="700" padding-bottom="30px"> 
           Welcome to the <br />{{restaurant_name}} team!
@@ -20,20 +20,14 @@
           You've been added as a staff member to our system. Below are your login details to access the staff portal: 
         </mj-text>
 
-        <mj-list padding-left="12px">
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
-            Email: {{staff_email}}
-          </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
-            Temporary Password: {{temp_password}}
-          </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
-            Role: {{staff_role}}
-          </mj-li>
-          <mj-li color="#384860" line-height="150%" font-size="14px" font-weight="400"> 
-            Start Date: {{start_date}}
-          </mj-li>
-        </mj-list>
+        <mj-text padding-left="12px" color="#384860" font-size="14px" font-weight="400">
+          <ul style="padding-left: 20px; margin: 0;">
+            <li style="line-height: 150%; margin-bottom: 5px;">Email: {{staff_email}}</li>
+            <li style="line-height: 150%; margin-bottom: 5px;">Temporary Password: {{temp_password}}</li>
+            <li style="line-height: 150%; margin-bottom: 5px;">Role: {{staff_role}}</li>
+            <li style="line-height: 150%; margin-bottom: 5px;">Start Date: {{start_date}}</li>
+          </ul>
+        </mj-text>
       </mj-column>
       
       <mj-column width="100%" padding-top="14px">

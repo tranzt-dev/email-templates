@@ -9,6 +9,11 @@
     url('https://res.cloudinary.com/dqjclnoyu/image/upload/v1754623356/tranzt/email/email-template-bg-1.png');
     background-size: cover;}; .body-section { background-color: #fff; }
   </mj-style>
+    <mj-style>
+    .rider-body { padding: 20px; background-image:
+    url('https://res.cloudinary.com/dqjclnoyu/image/upload/v1754623356/tranzt/email/email-template-bg-1.png');
+    background-size: cover;}; .body-section { background-color: yellow; }
+  </mj-style>
 
   <mj-style>
     @media (max-width:480px) {.mobile-apps {padding-bottom: 10px;} }
