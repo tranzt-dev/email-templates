@@ -1,0 +1,120 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body css-class="main">
+    <mj-include path="../components/logo.mjml" />
+
+    <mj-section
+      mj-class="body-section"
+      background-color="#FFF"
+      border-radius="12px 12px 0 0"
+    >
+      <mj-column width="100%">
+        <mj-text
+          font-family="Inter"
+          font-size="20px"
+          line-height="140%"
+          font-weight="700"
+          padding-bottom="30px"
+        >
+          Your Weekly Performance Report 📊
+        </mj-text>
+
+        <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          Here's a summary of your delivery performance this week. Keep up the
+          great work!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section
+      background-color="#F5F7FA"
+      padding="16px 20px"
+    >
+      <mj-column width="33%">
+        <mj-text align="center" font-size="24px" font-weight="700" color="#000">
+          {{total_deliveries}}
+        </mj-text>
+        <mj-text align="center" font-size="12px" color="#384860">
+          Deliveries
+        </mj-text>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-text align="center" font-size="24px" font-weight="700" color="#000">
+          {{average_rating}} ⭐
+        </mj-text>
+        <mj-text align="center" font-size="12px" color="#384860">
+          Avg. Rating
+        </mj-text>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-text align="center" font-size="24px" font-weight="700" color="#000">
+          ₦{{amount}}
+        </mj-text>
+        <mj-text align="center" font-size="12px" color="#384860">
+          Earnings
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section
+      mj-class="body-section"
+      background-color="#FFF"
+      border-radius="0 0 12px 12px"
+    >
+      <mj-column width="100%">
+        <mj-text
+          font-size="14px"
+          color="#384860"
+          font-weight="600"
+          padding-top="20px"
+          padding-bottom="8px"
+        >
+          Customer Feedback:
+        </mj-text>
+
+        <mj-list padding-left="12px">
+          <mj-li
+            color="#384860"
+            line-height="150%"
+            font-size="14px"
+            font-weight="400"
+          >
+            {{feedback_1}}
+          </mj-li>
+          <mj-li
+            color="#384860"
+            line-height="150%"
+            font-size="14px"
+            font-weight="400"
+          >
+            {{feedback_2}}
+          </mj-li>
+          <mj-li
+            color="#384860"
+            line-height="150%"
+            font-size="14px"
+            font-weight="400"
+          >
+            {{feedback_3}}
+          </mj-li>
+        </mj-list>
+      </mj-column>
+
+      <mj-column width="100%" padding-top="24px">
+        <mj-text
+          color="#384860"
+          line-height="150%"
+          font-size="14px"
+          font-weight="400"
+        >
+          Tranzt Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>

@@ -1,0 +1,88 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body css-class="main">
+    <mj-include path="../components/logo.mjml" />
+
+    <mj-section
+      mj-class="body-section"
+      background-color="#FFF"
+      border-radius="12px"
+    >
+      <mj-column width="100%">
+        <mj-text
+          font-family="Inter"
+          font-size="20px"
+          line-height="140%"
+          font-weight="700"
+          padding-bottom="30px"
+        >
+          Welcome to the Team! 👋
+        </mj-text>
+
+        <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          You've been added as a <strong>{{staff_role}}</strong> at
+          <strong>{{restaurant_name}}</strong> on Tranzt.
+        </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          Here are your login credentials:
+        </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="4px" padding-top="12px"
+          container-background-color="#F5F7FA">
+          <strong>Email:</strong> {{staff_email}}
+        </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="4px"
+          container-background-color="#F5F7FA">
+          <strong>Temporary Password:</strong> {{temp_password}}
+        </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="12px"
+          container-background-color="#F5F7FA">
+          <strong>Start Date:</strong> {{start_date}}
+        </mj-text>
+
+        <mj-text
+          font-size="14px"
+          color="#384860"
+          padding-top="16px"
+          padding-bottom="8px"
+        >
+          Please change your password after your first login for security.
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="100%" padding-top="24px">
+        <mj-button align="left" width="227px" href="{{staff_portal_url}}">
+          Go to Staff Portal
+        </mj-button>
+
+        <mj-text
+          padding-top="24px"
+          color="#384860"
+          line-height="150%"
+          font-size="14px"
+          font-weight="400"
+        >
+          Need help?
+          <a href="{{support_url}}" style="color: #FDCE07; text-decoration: underline">
+            Contact support</a>.
+        </mj-text>
+
+        <mj-text
+          padding-top="16px"
+          color="#384860"
+          line-height="150%"
+          font-size="14px"
+          font-weight="400"
+        >
+          Tranzt Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>

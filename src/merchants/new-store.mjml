@@ -1,0 +1,89 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body css-class="main">
+    <mj-include path="../components/logo.mjml" />
+
+    <mj-section
+      mj-class="body-section"
+      background-color="#FFF"
+      border-radius="12px"
+    >
+      <mj-column width="100%">
+        <mj-text
+          font-family="Inter"
+          font-size="20px"
+          line-height="140%"
+          font-weight="700"
+          padding-bottom="30px"
+        >
+          Your Store is Live! 🎉
+        </mj-text>
+
+        <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          Great news! Your store <strong>{{restaurant_name}}</strong> has been
+          successfully created on Tranzt and is now live.
+        </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          Customers can now discover your store and place orders. Here's what
+          you can do next:
+        </mj-text>
+
+        <mj-list padding-left="12px">
+          <mj-li
+            color="#384860"
+            line-height="150%"
+            font-size="14px"
+            font-weight="400"
+          >
+            Add your menu items and set prices
+          </mj-li>
+          <mj-li
+            color="#384860"
+            line-height="150%"
+            font-size="14px"
+            font-weight="400"
+          >
+            Set your operating hours
+          </mj-li>
+          <mj-li
+            color="#384860"
+            line-height="150%"
+            font-size="14px"
+            font-weight="400"
+          >
+            Customize your store profile
+          </mj-li>
+        </mj-list>
+      </mj-column>
+
+      <mj-column width="100%" padding-top="24px">
+        <mj-text
+          padding-top="24px"
+          color="#384860"
+          line-height="150%"
+          font-size="14px"
+          font-weight="400"
+        >
+          If you need any help getting started, our support team is here for
+          you.
+        </mj-text>
+
+        <mj-text
+          padding-top="16px"
+          color="#384860"
+          line-height="150%"
+          font-size="14px"
+          font-weight="400"
+        >
+          Tranzt Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>

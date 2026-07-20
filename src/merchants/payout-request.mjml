@@ -1,0 +1,84 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body css-class="main">
+    <mj-include path="../components/logo.mjml" />
+
+    <mj-section
+      mj-class="body-section"
+      background-color="#FFF"
+      border-radius="12px"
+    >
+      <mj-column width="100%">
+        <mj-text
+          font-family="Inter"
+          font-size="20px"
+          line-height="140%"
+          font-weight="700"
+          padding-bottom="30px"
+        >
+          Payout Request Submitted 💰
+        </mj-text>
+
+        <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          Your payout request has been submitted successfully. Here are the
+          details:
+        </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="4px" padding-top="12px"
+          container-background-color="#F5F7FA">
+          <strong>Amount:</strong> ₦{{total_amount}}
+        </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="4px"
+          container-background-color="#F5F7FA">
+          <strong>Method:</strong> {{payout_method}}
+        </mj-text>
+        <mj-text font-size="14px" color="#384860" padding-bottom="12px"
+          container-background-color="#F5F7FA">
+          <strong>Date:</strong> {{payout_date}}
+        </mj-text>
+
+        <mj-text
+          font-size="14px"
+          color="#384860"
+          padding-top="16px"
+          padding-bottom="8px"
+        >
+          Your payout will be processed within 1–3 business days. You can track
+          all your transactions in the dashboard.
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="100%" padding-top="24px">
+        <mj-button align="left" width="260px" href="{{transaction_history_url}}">
+          View Transaction History
+        </mj-button>
+
+        <mj-text
+          padding-top="24px"
+          color="#384860"
+          line-height="150%"
+          font-size="14px"
+          font-weight="400"
+        >
+          Have questions?
+          <a href="{{support_url}}" style="color: #FDCE07; text-decoration: underline">
+            Contact support</a>.
+        </mj-text>
+
+        <mj-text
+          padding-top="16px"
+          color="#384860"
+          line-height="150%"
+          font-size="14px"
+          font-weight="400"
+        >
+          Tranzt Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>

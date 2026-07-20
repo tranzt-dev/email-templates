@@ -1,0 +1,88 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body css-class="main">
+    <mj-include path="../components/logo.mjml" />
+
+    <mj-section
+      mj-class="body-section"
+      background-color="#FFF"
+      border-radius="12px"
+    >
+      <mj-column width="100%">
+        <mj-text
+          font-family="Inter"
+          font-size="20px"
+          line-height="140%"
+          font-weight="700"
+          padding-bottom="30px"
+        >
+          Welcome to Tranzt! 🚴
+        </mj-text>
+
+        <mj-text padding-bottom="8px"> Hi {{firstName}}, </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          Thank you for signing up as a rider on Tranzt! Your application has
+          been received.
+        </mj-text>
+
+        <mj-text font-size="14px" color="#384860" padding-bottom="8px">
+          Here's what happens next:
+        </mj-text>
+
+        <mj-list padding-left="12px">
+          <mj-li
+            color="#384860"
+            line-height="150%"
+            font-size="14px"
+            font-weight="400"
+          >
+            Our team will review your documents
+          </mj-li>
+          <mj-li
+            color="#384860"
+            line-height="150%"
+            font-size="14px"
+            font-weight="400"
+          >
+            You'll receive a verification email once approved
+          </mj-li>
+          <mj-li
+            color="#384860"
+            line-height="150%"
+            font-size="14px"
+            font-weight="400"
+          >
+            Start accepting deliveries and earning
+          </mj-li>
+        </mj-list>
+      </mj-column>
+
+      <mj-column width="100%" padding-top="24px">
+        <mj-text
+          padding-top="24px"
+          color="#384860"
+          line-height="150%"
+          font-size="14px"
+          font-weight="400"
+        >
+          If you have any questions in the meantime, feel free to contact our
+          support team.
+        </mj-text>
+
+        <mj-text
+          padding-top="16px"
+          color="#384860"
+          line-height="150%"
+          font-size="14px"
+          font-weight="400"
+        >
+          Tranzt Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>
